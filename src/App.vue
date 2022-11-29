@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <JobsList />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import JobsList from "./positions/JobsList.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    JobsList,
   },
 };
 </script>
@@ -21,6 +20,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #eef9f9;
+  min-height: 100vh;
+}
+body {
+  margin: 0;
 }
 </style>
